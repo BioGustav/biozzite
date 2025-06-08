@@ -10,8 +10,8 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 --enable-repo brave-browser
-dnf5 install -y tmux alacritty zsh brave-browser
+dnf5 install -y --enable-repo brave-browser brave-browser
+dnf5 install -y tmux alacritty zsh
 dnf5 remove -y fish steam
 
 # Use a COPR Example:
