@@ -1,1 +1,1 @@
-flatpak install -y com.brave.Browser com.valvesoftware.Steam
+flatpak install -y com.valvesoftware.Steam
