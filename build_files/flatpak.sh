@@ -1,1 +1,1 @@
-flatpak install -y com.valvesoftware.Steam
+flatpak install -y app.zen_browser.zen

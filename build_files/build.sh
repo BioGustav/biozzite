@@ -1,4 +1,4 @@
-    #!/bin/bash
+#!/bin/bash
 
 set -ouex pipefail
 
@@ -12,9 +12,11 @@ set -ouex pipefail
 mkdir -p /var/opt
 
 # this installs a package from fedora repos
-dnf5 install -y --enable-repo brave-browser brave-browser
-dnf5 install -y tmux alacritty zsh
-dnf5 remove -y fish steam
+dnf5 install -y tmux alacritty zsh git stow
+dnf5 remove -y fish 
+
+git clone https://github.com/biogustav/dotfiles
+stow --dir=dotfiles --dotfiles .
 
 # Use a COPR Example:
 #
